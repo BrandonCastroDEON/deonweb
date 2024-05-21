@@ -3,110 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEON - Empresa</title>
-    <link rel="stylesheet" href="style.css">
+    <title>DEON</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo-deon.png" alt="Logo DEON">
+    <header class="bg-light p-3 mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="img/favicon.png" alt="Logo DEON" class="img-fluid">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tienda">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bolsa-trabajo">Bolsa de Trabajo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes Somos</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#tienda">Tienda</a></li>
-                <li><a href="#noticias">Noticias</a></li>
-                <li><a href="#bolsa-trabajo">Bolsa de Trabajo</a></li>
-                <li><a href="#contacto">Contáctanos</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#quienes-somos">Quiénes Somos</a></li>
-            </ul>
-        </nav>
     </header>
-
-    <section id="inicio" class="banner">
-        <img src="banner.jpg" alt="Banner Promocional">
+    
+    <section id="inicio">
+        <div class="container">
+            <div class="banner mb-4">
+                <img src="banner.jpg" alt="Imágenes Promocionales" class="img-fluid">
+            </div>
+            <div class="intro text-center">
+                <h2>Automatización, Control, UTR Control</h2>
+            </div>
+        </div>
     </section>
-
-    <section id="productos">
+    
+    <section id="productos" class="container">
         <h2>Productos</h2>
-        <div class="producto">
-            <img src="producto1.jpg" alt="Producto 1">
-            <p>Descripción del producto 1</p>
-            <button>Comprar</button>
+        <div class="row">
+            <div class="col-md-4 product">
+                <img src="producto1.jpg" alt="Producto 1" class="img-fluid">
+                <p>Descripción del Producto 1</p>
+                <button class="btn btn-primary">Me Interesa</button>
+            </div>
+            <div class="col-md-4 product">
+                <img src="producto2.jpg" alt="Producto 2" class="img-fluid">
+                <p>Descripción del Producto 2</p>
+                <button class="btn btn-primary">Me Interesa</button>
+            </div>
+            <!-- Añade más productos según sea necesario -->
         </div>
-        <!-- Repite para más productos -->
     </section>
-
-    <section id="servicios">
+    
+    <section id="servicios" class="container mt-5">
         <h2>Servicios</h2>
-        <div class="servicio">
-            <img src="servicio1.jpg" alt="Servicio 1">
-            <p>Descripción del servicio 1</p>
-            <button>Solicita una cotización</button>
+        <div class="row">
+            <div class="col-md-4 service">
+                <img src="servicio1.jpg" alt="Servicio 1" class="img-fluid">
+                <p>Descripción del Servicio 1</p>
+                <button class="btn btn-primary">Me Interesa</button>
+            </div>
+            <div class="col-md-4 service">
+                <img src="servicio2.jpg" alt="Servicio 2" class="img-fluid">
+                <p>Descripción del Servicio 2</p>
+                <button class="btn btn-primary">Me Interesa</button>
+            </div>
+            <!-- Añade más servicios según sea necesario -->
         </div>
-        <!-- Repite para más servicios -->
     </section>
-
-    <section id="tienda">
+    
+    <section id="tienda" class="container mt-5">
         <h2>Tienda</h2>
-        <div class="producto-tienda">
-            <img src="producto-tienda1.jpg" alt="Producto Tienda 1">
-            <p>Descripción del producto tienda 1</p>
-            <button>Comprar</button>
+        <div class="row">
+            <div class="col-md-4 product">
+                <img src="producto1.jpg" alt="Producto 1" class="img-fluid">
+                <p>Descripción del Producto 1</p>
+                <input type="number" class="form-control" min="1" value="1">
+                <button class="btn btn-success mt-2">Comprar</button>
+            </div>
+            <div class="col-md-4 product">
+                <img src="producto2.jpg" alt="Producto 2" class="img-fluid">
+                <p>Descripción del Producto 2</p>
+                <input type="number" class="form-control" min="1" value="1">
+                <button class="btn btn-success mt-2">Comprar</button>
+            </div>
+            <!-- Añade más productos según sea necesario -->
         </div>
-        <!-- Repite para más productos -->
     </section>
-
-    <section id="noticias">
+    
+    <section id="noticias" class="container mt-5">
         <h2>Noticias</h2>
-        <div class="noticia">
-            <h3>Título de la Noticia</h3>
-            <p>Resumen de la noticia...</p>
+        <div class="news-item">
+            <h3>Título de la Noticia 1</h3>
+            <p>Resumen de la noticia 1...</p>
         </div>
-        <!-- Repite para más noticias -->
-    </section>
-
-    <section id="bolsa-trabajo">
-        <h2>Bolsa de Trabajo</h2>
-        <div class="vacante">
-            <h3>Nombre de la Vacante</h3>
-            <p>Descripción de la vacante...</p>
-            <p>Enviar CV a <a href="mailto:contacto@deon.com.mx">contacto@deon.com.mx</a></p>
+        <div class="news-item">
+            <h3>Título de la Noticia 2</h3>
+            <p>Resumen de la noticia 2...</p>
         </div>
-        <!-- Repite para más vacantes -->
+        <!-- Añade más noticias según sea necesario -->
     </section>
-
-    <section id="contacto">
-        <h2>Contáctanos</h2>
-        <p>Email: <a href="mailto:contacto@deon.com.mx">contacto@deon.com.mx</a></p>
-        <p>Dirección: Veracruz, México</p>
-    </section>
-
-    <section id="blog">
+    
+    <section id="blog" class="container mt-5">
         <h2>Blog</h2>
-        <div class="entrada-blog">
-            <h3>Título del Blog</h3>
-            <p>Contenido del blog...</p>
+        <div class="blog-post">
+            <h3>Título del Blog Post 1</h3>
+            <p>Resumen del blog post 1...</p>
         </div>
-        <!-- Repite para más entradas del blog -->
+        <div class="blog-post">
+            <h3>Título del Blog Post 2</h3>
+            <p>Resumen del blog post 2...</p>
+        </div>
+        <!-- Añade más blog posts según sea necesario -->
     </section>
-
-    <section id="quienes-somos">
+    
+    <section id="bolsa-trabajo" class="container mt-5">
+        <h2>Bolsa de Trabajo</h2>
+        <div class="job">
+            <h3>Vacante 1</h3>
+            <p>Descripción de la vacante 1...</p>
+            <button class="btn btn-info">Postúlate</button>
+        </div>
+        <div class="job">
+            <h3>Vacante 2</h3>
+            <p>Descripción de la vacante 2...</p>
+            <button class="btn btn-info">Postúlate</button>
+        </div>
+        <!-- Añade más vacantes según sea necesario -->
+    </section>
+    
+    <section id="contacto" class="container mt-5">
+        <h2>Contáctanos</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+    
+    <section id="quienes-somos" class="container mt-5">
         <h2>Quiénes Somos</h2>
-        <p>Fotografía corporativa...</p>
-        <p>Historia...</p>
-        <p>Misión...</p>
-        <p>Visión...</p>
-        <p>Valores...</p>
+        <div class="about-us">
+            <img src="corporativo.jpg" alt="Fotografía Corporativa" class="img-fluid mb-3">
+            <h3>Historia</h3>
+            <p>Nuestra historia...</p>
+            <h3>Misión</h3>
+            <p>Nuestra misión...</p>
+            <h3>Visión</h3>
+            <p>Nuestra visión...</p>
+            <h3>Valores</h3>
+            <p>Nuestros valores...</p>
+            <h3>Valor Agregado</h3>
+            <p>Nuestro valor agregado...</p>
+        </div>
     </section>
-
-    <footer>
+    
+    <footer class="bg-dark text-white text-center p-3 mt-5">
         <p>&copy; 2024 DEON. Todos los derechos reservados.</p>
+        <p>Veracruz, México</p>
+        <p>Email: contacto@deon.com.mx</p>
     </footer>
-
-    <script src="scripts.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
