@@ -5,67 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEON</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="bg-light p-3 mb-4">
+    <!-- Enlaces adicionales encima de la barra de navegación -->
+    <div class="top-bar bg-dark text-light py-1">
+        <div class="container d-flex justify-content-end">
+            <a href="Bolsa de Trabajo.html" class="text-light mx-2">Bolsa de trabajo</a>
+            <span>|</span>
+            <a href="contactanos.html" class="text-light mx-2">Contáctanos</a>
+        </div>
+    </div>
+
+    <header class="bg-light py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
-                <img src="img/favicon.png" alt="Logo DEON" class="img-fluid">
+                <a href="index.html">
+                    <img src="img/favicon.png" alt="Logo DEON" class="img-fluid" style="max-width: 100px;">
+                </a>
             </div>
             <nav>
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tienda">Tienda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#bolsa-trabajo">Bolsa de Trabajo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes Somos</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li>
+                    <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="tienda.html" class="nav-link">Tienda</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-    <section id="inicio">
-        <div class="container">
-            <div class="banner mb-4">
+
+    <section id="inicio" class="container my-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
                 <img src="banner.jpg" alt="Imágenes Promocionales" class="img-fluid">
-            </div>
-            <div class="intro text-center">
-                <h2>Automatización, Control, UTR Control</h2>
+                <div class="intro mt-4">
+                    <h2>Automatización | Control | <a href="https://www.utr-control.com" target="_blank">UTR Control</a></h2>
+                </div>
             </div>
         </div>
     </section>
-    
-    <section id="productos" class="container">
-        <h2>Productos</h2>
+
+    <section id="productos" class="container my-5">
+        <h2 class="text-center mb-4">Noticias</h2>
         <div class="row">
-            <div class="col-md-4 product">
+            <div class="col-md-4 text-center">
                 <img src="producto1.jpg" alt="Producto 1" class="img-fluid">
-                <p>Descripción del Producto 1</p>
+                <p>Descripción</p>
                 <button class="btn btn-primary">Me Interesa</button>
             </div>
-            <div class="col-md-4 product">
+            <div class="col-md-4 text-center">
                 <img src="producto2.jpg" alt="Producto 2" class="img-fluid">
-                <p>Descripción del Producto 2</p>
+                <p>Descripción</p>
                 <button class="btn btn-primary">Me Interesa</button>
             </div>
             <!-- Añade más productos según sea necesario -->
         </div>
     </section>
-    
-    <section id="servicios" class="container mt-5">
-        <h2>Servicios</h2>
+
+    <section id="servicios" class="container my-5">
+        <h2 class="text-center mb-4">Blog</h2>
         <div class="row">
-            <div class="col-md-4 service">
+            <div class="col-md-4 text-center">
                 <img src="servicio1.jpg" alt="Servicio 1" class="img-fluid">
-                <p>Descripción del Servicio 1</p>
+                <p>Descripción</p>
                 <button class="btn btn-primary">Me Interesa</button>
             </div>
-            <div class="col-md-4 service">
+            <div class="col-md-4 text-center">
                 <img src="servicio2.jpg" alt="Servicio 2" class="img-fluid">
                 <p>Descripción del Servicio 2</p>
                 <button class="btn btn-primary">Me Interesa</button>
@@ -73,112 +79,32 @@
             <!-- Añade más servicios según sea necesario -->
         </div>
     </section>
-    
-    <section id="tienda" class="container mt-5">
-        <h2>Tienda</h2>
+
+    <section id="quienes-somos" class="container my-5">
+        <h2 class="text-center mb-4">Quiénes Somos</h2>
         <div class="row">
-            <div class="col-md-4 product">
-                <img src="producto1.jpg" alt="Producto 1" class="img-fluid">
-                <p>Descripción del Producto 1</p>
-                <input type="number" class="form-control" min="1" value="1">
-                <button class="btn btn-success mt-2">Comprar</button>
+            <div class="col-md-12">
+                <img src="corporativo.jpg" alt="Fotografía Corporativa" class="img-fluid mb-3">
+                <h3>Historia</h3>
+                <p>Nuestra historia...</p>
+                <h3>Misión</h3>
+                <p>Nuestra misión...</p>
+                <h3>Visión</h3>
+                <p>Nuestra visión...</p>
+                <h3>Valores</h3>
+                <p>Nuestros valores...</p>
+                <h3>Valor Agregado</h3>
+                <p>Nuestro valor agregado...</p>
             </div>
-            <div class="col-md-4 product">
-                <img src="producto2.jpg" alt="Producto 2" class="img-fluid">
-                <p>Descripción del Producto 2</p>
-                <input type="number" class="form-control" min="1" value="1">
-                <button class="btn btn-success mt-2">Comprar</button>
-            </div>
-            <!-- Añade más productos según sea necesario -->
         </div>
     </section>
-    
-    <section id="noticias" class="container mt-5">
-        <h2>Noticias</h2>
-        <div class="news-item">
-            <h3>Título de la Noticia 1</h3>
-            <p>Resumen de la noticia 1...</p>
-        </div>
-        <div class="news-item">
-            <h3>Título de la Noticia 2</h3>
-            <p>Resumen de la noticia 2...</p>
-        </div>
-        <!-- Añade más noticias según sea necesario -->
-    </section>
-    
-    <section id="blog" class="container mt-5">
-        <h2>Blog</h2>
-        <div class="blog-post">
-            <h3>Título del Blog Post 1</h3>
-            <p>Resumen del blog post 1...</p>
-        </div>
-        <div class="blog-post">
-            <h3>Título del Blog Post 2</h3>
-            <p>Resumen del blog post 2...</p>
-        </div>
-        <!-- Añade más blog posts según sea necesario -->
-    </section>
-    
-    <section id="bolsa-trabajo" class="container mt-5">
-        <h2>Bolsa de Trabajo</h2>
-        <div class="job">
-            <h3>Vacante 1</h3>
-            <p>Descripción de la vacante 1...</p>
-            <button class="btn btn-info">Postúlate</button>
-        </div>
-        <div class="job">
-            <h3>Vacante 2</h3>
-            <p>Descripción de la vacante 2...</p>
-            <button class="btn btn-info">Postúlate</button>
-        </div>
-        <!-- Añade más vacantes según sea necesario -->
-    </section>
-    
-    <section id="contacto" class="container mt-5">
-        <h2>Contáctanos</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" class="form-control"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-    </section>
-    
-    <section id="quienes-somos" class="container mt-5">
-        <h2>Quiénes Somos</h2>
-        <div class="about-us">
-            <img src="corporativo.jpg" alt="Fotografía Corporativa" class="img-fluid mb-3">
-            <h3>Historia</h3>
-            <p>Nuestra historia...</p>
-            <h3>Misión</h3>
-            <p>Nuestra misión...</p>
-            <h3>Visión</h3>
-            <p>Nuestra visión...</p>
-            <h3>Valores</h3>
-            <p>Nuestros valores...</p>
-            <h3>Valor Agregado</h3>
-            <p>Nuestro valor agregado...</p>
-        </div>
-    </section>
-    
-    <footer class="bg-dark text-white text-center p-3 mt-5">
+
+    <footer class="bg-light py-4 text-center">
         <p>&copy; 2024 DEON. Todos los derechos reservados.</p>
         <p>Veracruz, México</p>
         <p>Email: contacto@deon.com.mx</p>
     </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
